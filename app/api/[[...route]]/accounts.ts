@@ -74,6 +74,7 @@ const app = new Hono()
       ).returning({
         id:accounts.id,
       });
+      
       return c.json({data});
     }
 
