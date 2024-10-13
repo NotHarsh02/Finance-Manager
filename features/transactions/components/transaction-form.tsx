@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { DatePicker } from "@/components/date-picker";
 import { Textarea } from "@/components/ui/textarea";
 import { AmountInput } from "@/components/amount-input";
-import { insertAccountsSchema, insertTransactionSchema } from "@/db/schema";
+import { insertTransactionSchema } from "@/db/schema";
 import {
   Form,
   FormControl,

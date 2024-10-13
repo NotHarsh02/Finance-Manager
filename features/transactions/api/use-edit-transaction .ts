@@ -13,7 +13,8 @@ export const useEditTransaction = (id?:string) => {
   const mutation = useMutation<ResponseType, Error, RequestType>({
     mutationFn: async (json) => {
       const response = await client.api.transactions[":id"]["$patch"]({json,param:{id}});
-      return await response.json();
+      const res= await response.json()
+      return  res;
     },
     onSuccess: () => {
       toast.success("Transaction updated");
@@ -27,3 +28,5 @@ export const useEditTransaction = (id?:string) => {
 
   return mutation;
 };
+
+
