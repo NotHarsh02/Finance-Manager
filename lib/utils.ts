@@ -17,8 +17,8 @@ export function convertAmountFromMiliunits(amount: number) {
 export function formatCurrency(value: number) {
   return Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'KES',
-    minimumFractionDigits: 2,
+    currency: 'INR',
+    minimumFractionDigits: 0,
   }).format(value);
 }
 
